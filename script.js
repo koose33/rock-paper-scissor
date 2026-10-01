@@ -40,13 +40,18 @@ function playRound(humanChoice, computerChoice) {
         console.log("It's a tie!");
     } else if (humanChoice === "rock" && computerChoice === "scissors") {
         console.log("You win!");
+        humanScore = humanScore + 1;
     } else if (humanChoice === "paper" && computerChoice === "rock") {
         console.log("You win!");
+        humanScore = humanScore + 1;
     } else if (humanChoice === "scissors" && computerChoice === "paper") {
         console.log("You win!");
+        humanScore = humanScore + 1;
     } else {
         console.log("You lose!");
+        computerScore = computerScore + 1;
     }
+    console.log(humanScore, computerScore);
 }
 
 const humanSelection = getHumanChoice()
