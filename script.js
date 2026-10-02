@@ -39,18 +39,18 @@ function playGame() {
     function playRound(humanChoice, computerChoice) { 
         console.log(humanChoice, computerChoice);
         if (humanChoice === computerChoice) {
-            console.log("It's a tie!");
+            console.log("It's a draw! You both picked " + humanChoice);
         } else if (humanChoice === "rock" && computerChoice === "scissors") {
-            console.log("You win!");
+            console.log("You win! " + humanChoice + " beats " + computerChoice + "!");
             humanScore = humanScore + 1;
         } else if (humanChoice === "paper" && computerChoice === "rock") {
-            console.log("You win!");
+            console.log("You win! " + humanChoice + " beats " + computerChoice + "!");
             humanScore = humanScore + 1;
         } else if (humanChoice === "scissors" && computerChoice === "paper") {
-            console.log("You win!");
+            console.log("You win! " + humanChoice + " beats " + computerChoice + "!");
             humanScore = humanScore + 1;
         } else {
-            console.log("You lose!");
+            console.log("You lose! " + computerChoice + " beats " + humanChoice + "!");
             computerScore = computerScore + 1;
         }
         console.log(humanScore, computerScore);
